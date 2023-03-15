@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Replace the variables below with your own values
+SERVER="localhost"
+PORT="41061"
+USERNAME="root"
+PASSWORD="root"
+FILEPATH="/www/zdjecia/myfile.jpg"
+
+# Connect to the server and remove the file
+sshpass -p "$PASSWORD" ssh -p "$PORT" "$USERNAME"@"$SERVER" "rm $FILEPATH"

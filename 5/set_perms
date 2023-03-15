@@ -1,0 +1,4 @@
+#!/bin/sh
+
+chown mysql zdjecia
+chmod 777 zdjecia

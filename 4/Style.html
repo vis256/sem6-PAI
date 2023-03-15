@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <script>
+      $(function () {
+        $("button:contains('Zielony')").click(function () {
+          $("#classic").addClass("zielona");
+        });
+        $("button:contains('mosteczek')").click(function () {
+          $("#classic").removeClass("zielona");
+        });
+        $("button:contains('ugina')").click(function () {
+          $("#toggle").toggleClass("zielona");
+        });
+
+        $("tr:even").addClass("zielona");
+
+        // 12
+        $("ol > li.a:has(.b:not(:has(a))) ").css("border", "1rem solid red");
+      });
+    </script>
+    <style>
+      .zielona {
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="a">a</p>
+    <p>b</p>
+    <p>c</p>
+    <p>d</p>
+    <div>e</div>
+    <div class="c">f</div>
+    <table>
+      <tr>
+        <td>Pierwszy</td>
+      </tr>
+      <tr>
+        <td>Drugi</td>
+      </tr>
+      <tr>
+        <td>Trzeci</td>
+      </tr>
+      <tr>
+        <td>Czwarty</td>
+      </tr>
+      <tr>
+        <td>Piąty</td>
+      </tr>
+      <tr>
+        <td>Szósty</td>
+      </tr>
+    </table>
+    <div>
+      <button>Zielony</button><button>mosteczek</button
+      ><span id="classic">Zmiana przez dodawanie/usuwanie klasy.</span>
+    </div>
+    <div>
+      <button>ugina się.</button
+      ><span id="toggle">Zmiana przez przełączanie klas.</span>
+    </div>
+    <a href="wakalaka.html">Wakalaka</a>
+    <a href="asdf.pdf">PDF</a>
+    <a href="asdf.html">Asdf</a>
+
+    <ol>
+      <li class="a">Z klasą a bez linku</li>
+      <li>Bez</li>
+      <li class="a">
+        Z klasą a i
+        <h1 class="b">
+          <a href="">z linkiem</a>
+        </h1>
+      </li>
+      <li class="a">
+        Z klasą a i
+        <h1 class="b">bez linku</h1>
+      </li>
+    </ol>
+  </body>
+</html>

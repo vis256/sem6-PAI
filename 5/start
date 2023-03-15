@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run --name xampp-server -p 41061:22 -p 41062:80 -d -v .:/www tomsik68/xampp
