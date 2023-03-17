@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "username: root"
+echo "password: root"
+
+ssh root@localhost -p 41061
