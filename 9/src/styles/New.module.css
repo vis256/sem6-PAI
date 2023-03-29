@@ -1,0 +1,18 @@
+.form {
+  border: 2px solid white;
+  padding: 1rem;
+  gap: 2rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.form > input {
+  font-family: monospace;
+  text-align: center;
+}
+
+.form > button {
+  font-family: monospace;
+  padding: 0 1rem;
+}

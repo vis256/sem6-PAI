@@ -1,0 +1,29 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task button {
+  background: none;
+  color: white;
+  border: none;
+}
+
+.finishButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.removeButton {
+}
+
+.content {
+}
+
+.finished {
+  color: red !important;
+  text-decoration: line-through;
+}
